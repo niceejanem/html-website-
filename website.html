@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU'RE GETTING TO KNOW ME!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #e09bcf;
+            color: #0a0404;
+        }
+        header {
+            background-color: #c23b85;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #7e2c5e;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        nav button {
+            background-color: #c23b85;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        nav button:hover {
+            background-color: #a01c6a;
+        }
+        section {
+            display: none; /* Hide all sections by default */
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section.active {
+            display: block; /* Only the active section is visible */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .profile-img {
+            display: block;
+            margin: 1rem auto;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #c23b85;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            border: 3px solid #7e2c5e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 1rem auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="profile-img" src="c:\Users\ALTHEA KHRYZZ\Downloads\462545394_2901440880007698_5766849096413674822_n.jpg" alt="Profile Picture">
+        <h1> N I C E </h1>
+    </header>
+    <nav>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('hobbies')">Hobbies</button>
+        <button onclick="showSection('academics')">Academics</button>
+        <button onclick="showSection('goals')">My Goals</button>
+        <button onclick="showSection('future')">Future Aspirations</button>
+    </nav>
+
+    <section id="about" class="active">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Nicee Jane Moron</p>
+        <p><strong>School:</strong> Sultan Kudarat State University</p>
+        <p><strong>Year & Section:</strong> Bachelor of Science in Information Technology, 1st Year Section F</p>
+        <p><strong>Age:</strong> 18</p>
+        <p><strong>Sex:</strong> Female</p>
+        <p><strong>Birthday:</strong> June 13, 2006</p>
+        <img src="c:\Users\ALTHEA KHRYZZ\Downloads\465820710_1643928753141051_1808092784302236057_n.jpg" alt="About Me">
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <p>I really love dancing. It's my favorite activity because it allows me to express myself through movement and creativity. I enjoy learning different styles, especially dance sports and hip-hop. Dancing also helps me stay active and happy. 
+        I'm also a member of PAGSIKLAB DANCE TROUPE in SKSU-Isulan campus.</p>
+        <div class="image-container">
+            <img src="c:\Users\ALTHEA KHRYZZ\Downloads\467319362_608746534942914_8326202301679235977_n.jpg" alt="Dancing Photo 1">
+            <img src="c:\Users\ALTHEA KHRYZZ\Downloads\458088341_1104756767740227_8001379971269940755_n.jpg" alt="Dancing Photo 2">
+        </div>
+    </section>
+    
+
+    <section id="academics">
+        <h2>Academics</h2>
+        <p>I have always been passionate about learning and excelling in academics. Since elementary school, I have consistently been an honor student. I strive to maintain my academic performance because education is very important to me.</p>
+        <img src="c:\Users\ALTHEA KHRYZZ\Downloads\466927227_523432647364227_8111717875192964473_n.jpg" alt="Academic Achievements">
+    </section>
+
+    <section id="goals">
+        <h2>My Goals</h2>
+        <p>One of my main goals is to improve my skills and excel in my academic performance. I want to become more knowledgeable and skilled in the field of Information Technology. This will help me prepare for my future and achieve my dreams.</p>
+        <img src="c:\Users\ALTHEA KHRYZZ\Downloads\467494555_604216858710207_1102546622351523980_n.jpg" alt="My Goals">
+    </section>
+
+    <section id="future">
+        <h2>Future Aspirations</h2>
+        <p>In the future, I aim to become successful and work abroad as an Information Technology Analyst. I want to contribute to the tech industry and make a positive impact while achieving personal and professional growth.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nicee Jane Moron. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active')); // Hide all sections
+            document.getElementById(sectionId).classList.add('active'); // Show the selected section
+        }
+    </script>
+</body>
+</html>
